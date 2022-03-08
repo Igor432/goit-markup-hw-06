@@ -847,10 +847,11 @@ footer {
     border: var(--blue-color);
 }
 
-.name-label:focus>.modal-icon,
-.tel-label:focus>.modal-icon,
-.email-label:focus>.modal-icon {
+.name-label:focus-within>.modal-icon,
+.tel-label:focus-within>.modal-icon,
+.email-label:focus-within>.modal-icon {
     fill: var(--blue-color);
+    background-color: var(--blue-color);
 }
 
 .modal-icon {
