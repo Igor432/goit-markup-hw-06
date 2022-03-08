@@ -416,11 +416,14 @@
 
                     <h2>Оставьте свои данные, мы вам перезвоним</h2>
                     <div class="form-field name-field">
-                        <label for="name">Имя</label>
+                        <label for="name"><svg class="modal-icon name-icon" width="12" height="12">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Vector"
+                          ></use></svg>Имя</label>
                         <input type="text" class="name-label" id="name">
-                        <span class="form-icon name"></span>
+
                     </div>
-                    <br>
+
 
                     <div class="form-field tel-field">
                         <label for="tel">Телефон</label>
@@ -428,24 +431,24 @@
                         <span class="form-icon phone"></span>
                     </div>
 
-                    <br>
+
                     <div class="form-field email-field">
 
                         <label for="email">Почта</label>
                         <input type="text" class="email-label" id="email">
                         <span class="form-icon email"></span>
                     </div>
-                    <br>
+
                     <div class="form-field comments-field">
                         <label for="comments" class="comments-label">Комментарий</label>
-                        <textarea name="comments" class="comments" rows="4" id="comments"></textarea>
+                        <textarea name="comments" placeholder="Введите текст" class="comments" rows="4" id="comments"></textarea>
                     </div>
-                    <br>
+
                     <div class="policy">
                         <input type="checkbox" class="term" value="term" id="term">
-                        <label for="term">Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+                        <label for="term">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-terms"> Условия договора</a></label>
                     </div>
-                    <br>
+
                     <div class="button-div">
                         <button type="button" class="submit">Submit</button>
                     </div>
