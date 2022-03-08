@@ -827,6 +827,11 @@ footer {
     margin-right: 8px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.close_button:hover .close-button-icon {
+    fill: var(--blue-color);
 }
 
 .form-field {
