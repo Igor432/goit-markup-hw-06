@@ -844,7 +844,7 @@ footer {
 .name-label:focus-within,
 .tel-label:focus-within,
 .email-label:focus-within {
-    color: var(--blue-color);
+    border: var(--blue-color);
 }
 
 .name-label:focus>.modal-icon,
