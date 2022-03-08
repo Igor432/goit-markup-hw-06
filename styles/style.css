@@ -841,6 +841,18 @@ footer {
     width: 448px;
 }
 
+.name-label:focus-within,
+.tel-label:focus-within,
+.email-label:focus-within {
+    color: var(--blue-color);
+}
+
+.name-label:focus-within>.modal-icon,
+.tel-label:focus-within>.modal-icon,
+.email-label:focus-within>.modal-icon {
+    fill: var(--blue-color);
+}
+
 .modal-icon {
     position: absolute;
     bottom: 7px;
