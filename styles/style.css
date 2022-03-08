@@ -775,6 +775,7 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 10px;
+    position: relative;
 }
 
 .name-label,
@@ -786,7 +787,7 @@ footer {
 .modal-icon {
     position: absolute;
     bottom: 10px;
-    left: 4px;
+    left: 3px;
 }
 
 input {
