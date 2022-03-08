@@ -798,6 +798,7 @@ input {
     margin-top: 4px;
     text-indent: 20px;
     height: 40px;
+    position: relative;
 }
 
 .comments {
