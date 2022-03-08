@@ -785,6 +785,7 @@ footer {
 }
 
 .modal-icon {
+    display: block;
     position: absolute;
     margin-bottom: 10px;
     margin-left: 4px;
