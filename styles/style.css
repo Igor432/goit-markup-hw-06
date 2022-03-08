@@ -641,6 +641,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 9px;
+    cursor: pointer;
 }
 
 .icon-send {
