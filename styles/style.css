@@ -483,7 +483,6 @@ footer {
     background-color: var(--brand-dark);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
 }
 
 .footer-container {
@@ -768,6 +767,8 @@ footer {
     float: right;
     margin-top: 8px;
     margin-right: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-field {
@@ -780,6 +781,12 @@ footer {
 .tel-label,
 .email-label {
     width: 448px;
+}
+
+.modal-icon {
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: 4px;
 }
 
 input {
