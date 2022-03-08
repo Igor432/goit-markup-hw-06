@@ -847,9 +847,9 @@ footer {
     border: var(--blue-color);
 }
 
-.form-field:focus-within .modal-icon,
-.form-field:focus-within .modal-icon,
-.form-field:focus-within .modal-icon {
+.form-field:hover .modal-icon,
+.form-field:hover .modal-icon,
+.form-field:hover .modal-icon {
     fill: var(--blue-color);
 }
 
