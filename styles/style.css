@@ -870,8 +870,26 @@ padding-top: 40px;
 }
 
 .term {
-    height: 16px;
+    width: 1px;
+    height: 1px;
+    appearance: none;
+    position: absolute;
+   display: flex;
+}
+
+.term:checked +.check-icon {
+    background-color:  greenyellow;
+}
+
+.check-icon {
+    display: inline-block;
     width: 15px;
+    height: 15px;
+    border-radius: 10%;
+    border: 0.3px solid rgba(0, 0, 0, 0.712);
+    position: absolute;
+    left: -18px;
+    top: 4px;
 }
 
 .policy {
@@ -880,7 +898,10 @@ padding-top: 40px;
     align-items: center;
     padding-top: 20px;
     justify-content: center;
+    position: relative;
 }
+
+
 
 
 label {
