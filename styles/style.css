@@ -808,6 +808,7 @@ footer {
     pointer-events: none;
 }
 
+
 .modal {
     background: #ffffff;
     position: absolute;
@@ -816,6 +817,11 @@ footer {
     transform: translate(-50%, -50%);
     Width: 528px;
     Height: 581px;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    display: flex;
+ 
+ 
+   
 }
 
 .close_button {
@@ -835,6 +841,171 @@ footer {
     background-position: center;
        background-repeat: no-repeat;
        */
+}
+
+.register {
+    padding-left: 41px;
+    padding-right: 41px;
+    
+}
+
+input {
+    width: 448px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-indent: 25px;
+}
+
+.modal-title {
+
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+padding-top: 40px;
+}
+
+.term {
+    height: 16px;
+    width: 15px;
+}
+
+.policy {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+label {
+    margin-top: 10px;
+  position: relative;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.1;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #757575;
+}
+
+.name-label, .tel-label, .email-label {
+    margin-top: 10px ;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.comments {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.term-label {
+    margin: 0;
+    margin-left: 9px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+color: var(--p-color)
+}
+
+.submit {
+  
+    margin-top: 30px;
+    text-align: center;
+width: 200px;
+height: 50px;
+border: transparent;
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+color: #FFFFFF;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.name-label:focus-within,
+.tel-label:focus-within,
+.email-label:focus-within {
+    border: var(--blue-color);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comments::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-top: 12px;
+    padding-left: 16px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-icon {
+    position: absolute;
+   left: 0;
+  top: 32px;
+  margin-left: 15px;
+}
+
+input:focus-within .modal-icon,
+ {
+    border-color: var(--blue-color);
+    fill: var(--blue-color);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*
+
+.modal {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    Width: 528px;
+    Height: 581px;
+   
+}
+
+.close_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .form-field {
@@ -968,3 +1139,6 @@ label {
     border-color: transparent;
     cursor: pointer;
 }
+
+
+*/
