@@ -973,11 +973,10 @@ color: #FFFFFF;
   margin-left: 15px;
 }
 
-.tel-label:focus .modal-icon,
-.email-label:focus .modal-icon,
-.name-label:focus .modal-icon
+.form-field:focus .modal-icon,
+.form-field:focus-within .modal-icon
+
  {
-  
     fill: var(--blue-color);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--blue-color);
