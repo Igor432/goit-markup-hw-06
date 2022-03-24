@@ -973,9 +973,9 @@ color: #FFFFFF;
   margin-left: 15px;
 }
 
-label:focus-within .modal-icon,
-label:focus-within .modal-icon,
-label:focus-within .modal-icon
+.tel-label:focus .modal-icon,
+.email-label:focus .modal-icon,
+.name-label:focus .modal-icon
  {
     border-color: var(--blue-color);
     fill: var(--blue-color);
