@@ -822,14 +822,19 @@ footer {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url(../images/contacts/close-black-18dp.svg);
-    background-position: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     /*
+    background-image: url(../images/contacts/close-black-18dp.svg);
+    background-position: center;
+       background-repeat: no-repeat;
+       */
 }
 
 .form-field {
