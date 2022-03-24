@@ -856,7 +856,7 @@ input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    text-indent: 25px;
+    text-indent: 42px;
 }
 
 .modal-title {
@@ -972,7 +972,9 @@ color: #FFFFFF;
   margin-left: 15px;
 }
 
-input:focus-within .modal-icon,
+.name-label:focus-within, .modal-icon
+.tel-label:focus-within, .modal-icon
+.email-label:focus-within .modal-icon,
  {
     border-color: var(--blue-color);
     fill: var(--blue-color);
