@@ -79,7 +79,7 @@ header {
     margin-left: 94px;
 }
 
-.items {
+.menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -90,10 +90,10 @@ header {
     padding-bottom: 32px;
     display: block;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items::after,
-.items::after {
+.current::after {
     content: '';
     display: block;
     width: 100%;
@@ -103,13 +103,6 @@ header {
     border-radius: 2px;
     bottom: 0;
     left: 0;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items:hover::after {
-    display: block;
-    opacity: 1;
 }
 
 .menu>li {
@@ -142,24 +135,22 @@ header {
     letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items:hover,
-.items:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
 .mail:focus {
     color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel:hover,
 .tel:focus {
     color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item {
@@ -179,18 +170,17 @@ header {
 .contact-icons {
     fill: currentColor;
     margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel:hover .contact-icons,
 .tel:focus .contact-icons {
     fill: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover .contact-icons,
 .mail:focus .contact-icons {
     fill: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -329,11 +319,12 @@ header {
     position: absolute;
     bottom: 0;
     content: "";
-    display: block;
+    display: flex;
     width: 100%;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .task-text {
@@ -343,7 +334,6 @@ header {
     letter-spacing: 0.03em;
     color: white;
     text-transform: uppercase;
-    margin-top: 27px;
 }
 
 
@@ -423,22 +413,22 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-links:hover,
 .team-links:focus {
     background-color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons {
     fill: var(--icons-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-links:hover .social-icons,
 .team-links:focus .social-icons {
     fill: #ffffff;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -459,21 +449,22 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-card:hover,
 .clients-card:focus {
     border-color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icons {
     fill: var(--icons-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-card:hover .client-icons {
+.clients-card:hover .client-icons,
+.clients-card:focus .client-icons {
     fill: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -481,11 +472,14 @@ header {
 
 footer {
     background-color: var(--brand-dark);
+    padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .address {
@@ -497,10 +491,6 @@ footer {
 
 .address-list {
     margin-top: 9px;
-}
-
-.addres-container {
-    padding-top: 62px;
 }
 
 .footer-logo {
@@ -523,6 +513,7 @@ footer {
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail,
@@ -532,29 +523,26 @@ footer {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
 .footer-address:focus {
     color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
 .footer-tel:hover {
     color: var(--blue-color);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:focus,
 .footer-tel:focus {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--blue-color);
 }
 
 .footer-join {
     margin-left: 70px;
-    padding-top: 70px;
 }
 
 .join-slogan {
@@ -583,11 +571,11 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     vertical-align: middle;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-items:hover,
 .footer-items:focus {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--blue-color);
 }
 
@@ -597,7 +585,7 @@ footer {
 
 .subscribe-div {
     padding-left: 93px;
-    padding-top: 70px;
+
 }
 
 .subscribe-title {
@@ -621,11 +609,6 @@ footer {
     color: white;
 }
 
-.subscribe-button-div {
-    padding-top: 106px;
-    padding-left: 12px;
-}
-
 .footer-subscribe {
     width: 200px;
     height: 50px;
@@ -640,13 +623,21 @@ footer {
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    padding-top: 9px;
+  align-items: center;
     cursor: pointer;
+    margin-left: 12px;
+    margin-top: 20px;
 }
 
 .icon-send {
     margin-left: 10px;
     fill: white;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -681,26 +672,38 @@ footer {
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-main {
     position: relative;
     overflow: hidden;
+    transition: transform 250ms ease;
+    text-align: center;
+    justify-content: center;
 }
 
-.cards-main::before {
+.product-overlay {
     position: absolute;
-    display: block;
-    content: "";
-    transition: 250ms ease;
+    color: #FFFFFF;
+    transition: transform 250ms ease;
     background-color: rgba(33, 150, 243, 0.9);
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transform: translateY(+100%);
+    align-items: center;
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
 }
 
-.cards-link:hover .cards-main::before {
+.cards-link:hover .product-overlay,
+.cards-link:focus .product-overlay {
     transform: translateY(0);
 }
 
@@ -720,8 +723,8 @@ footer {
     border: 1px solid #eeeeee;
 }
 
-.cards-link:hover {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.cards-link:hover,
+.cards-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -760,10 +763,10 @@ footer {
     border-radius: 4px;
     padding: 6px 22px 6px 22px;
     border: transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:focus {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--blue-color);
     color: white;
     border: transparent;
@@ -771,7 +774,6 @@ footer {
 }
 
 .buttons:hover {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--blue-color);
     color: white;
     cursor: pointer;
@@ -814,24 +816,20 @@ footer {
     transform: translate(-50%, -50%);
     Width: 528px;
     Height: 581px;
-    justify-content: center;
 }
 
 .close_button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    background-image: url(../images/contacts/close-black-18dp.svg);
+    background-position: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    float: right;
-    margin-top: 8px;
-    margin-right: 8px;
-    align-items: center;
-    justify-content: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-}
-
-.close_button:hover .close-button-icon {
-    fill: var(--blue-color);
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 
 .form-field {
