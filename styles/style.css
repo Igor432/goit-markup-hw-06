@@ -607,6 +607,7 @@ footer {
     margin-top: 20px;
     background-color: var(--brand-dark);
     color: white;
+    text-indent: 16px;
 }
 
 .footer-subscribe {
@@ -876,11 +877,12 @@ padding-top: 40px;
 .term:checked +.check-icon {
     background: #2196F3;
     border: transparent;
+    display: block;
 }
 
-.term:checked +.checkbox-icon {
-   
-    display: inline-block;
+.term:checked + * .checkbox-icon {
+    display: block;
+
 }
 
 
@@ -892,7 +894,7 @@ padding-top: 40px;
     border: 0.3px solid rgba(0, 0, 0, 0.712);
   position: absolute;
 left: 0;
-top: 3.5px
+top: 5px
 
 }
 
@@ -903,7 +905,7 @@ top: 3.5px
     height: 18px;
     width: 18px;
     fill: #FFFFFF;
-    display: none
+    display: none;
 }
 
 .policy {
