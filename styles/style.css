@@ -890,7 +890,8 @@ top: 3.5px
 
 .checkbox-icon {
     position: absolute;
-    left: 0;
+    left: -2px;
+    bottom: 1px;
     height: 18px;
     width: 18px;
     fill: black;
