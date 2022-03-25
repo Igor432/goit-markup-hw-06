@@ -878,6 +878,11 @@ padding-top: 40px;
     border: transparent;
 }
 
+.term:checked +.checkbox-icon {
+   
+    display: inline-block;
+}
+
 
 .check-icon {
     display: inline-block;
@@ -893,11 +898,12 @@ top: 3.5px
 
 .checkbox-icon {
     position: absolute;
-    left: -2px;
-    bottom: 1px;
+    left: -3px;
+    bottom: 0px;
     height: 18px;
     width: 18px;
     fill: #FFFFFF;
+    display: none
 }
 
 .policy {
