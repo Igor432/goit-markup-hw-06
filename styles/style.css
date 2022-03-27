@@ -480,6 +480,11 @@ footer {
 .footer-container {
   display: flex;
   align-items: baseline;
+ 
+}
+
+.addres-con {
+  flex-grow: 2;
 }
 
 .address {
@@ -584,7 +589,7 @@ footer {
 }
 
 .subscribe-div {
-  padding-left: 93px;
+  margin-left: 93px;
 }
 
 .subscribe-title {
@@ -603,7 +608,7 @@ footer {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-top: 20px;
+ 
   background-color: var(--brand-dark);
   color: white;
   text-indent: 16px;
@@ -626,6 +631,10 @@ footer {
   align-items: center;
   cursor: pointer;
   margin-left: 12px;
+
+}
+
+.subscribe-form {
   margin-top: 20px;
 }
 
@@ -826,7 +835,7 @@ footer {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: transparent;
   cursor: pointer;
   position: absolute;
   top: 8px;
@@ -834,11 +843,11 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  
 }
 
 .register {
-  padding-left: 41px;
-  padding-right: 41px;
+ padding: 40px;
 }
 
 input {
@@ -857,7 +866,7 @@ input {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 40px;
+ margin-bottom: 12px;
 }
 
 .term {
@@ -882,22 +891,19 @@ input {
 }
 
 .check-icon {
-  display: inline-block;
+  display: flex;
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  border: 0.3px solid rgba(0, 0, 0, 0.712);
-  position: absolute;
-  left: 0;
-  top: 5px;
-  
+  border: 1px solid rgba(0, 0, 0, 0.712);
+ margin-right: 8px;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
 }
 
 .checkbox-icon {
-  position: absolute;
-  left: 2px;
-  top: 3px;
-  
+  margin-right: 0px;
   fill: #ffffff;
   display: none;
 }
@@ -916,12 +922,10 @@ input {
   letter-spacing: 0.03em;
 }
 
-.policy-text {
-  margin-left: 9px;
-}
+
 
 label {
-  margin-top: 10px;
+ 
   position: relative;
   font-weight: 400;
   font-size: 12px;
@@ -930,9 +934,19 @@ label {
   color: #757575;
 }
 
+ {
+  margin-top: 10px;
+}
+
 .name-label,
 .tel-label,
-.email-label {
+.email-label, 
+.comments-label {
+ margin: 0px;
+ margin-bottom: 4px;
+}
+
+.form-field {
   margin-top: 10px;
 }
 
@@ -949,18 +963,26 @@ label {
   border-radius: 4px;
 }
 
+textarea {
+padding-left: 16px;
+padding-top: 12px;
+}
+
 .term-label {
   margin: 0;
-  margin-left: 9px;
+ 
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--p-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit {
-  margin-top: 30px;
+
   text-align: center;
   width: 200px;
   height: 50px;
@@ -976,6 +998,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .name-label:focus-within,
@@ -992,16 +1015,15 @@ label {
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
-  padding-left: 16px;
+  
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
   position: absolute;
-  left: 0;
+  left: 12px;
   top: 32px;
-  margin-left: 15px;
+ 
 }
 
 .form-field:focus .modal-icon,
