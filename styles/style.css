@@ -860,6 +860,7 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   text-indent: 42px;
+  cursor: pointer;
 }
 
 .modal-title {
@@ -904,12 +905,14 @@ align-items: center;
  align-items: center;
  justify-content: center;
  text-align: center;
+ cursor: pointer;
 }
 
 .checkbox-icon {
   margin-right: 0px;
   fill: #ffffff;
   display: none;
+  cursor: pointer;
 }
 
 .policy {
@@ -970,6 +973,7 @@ label {
 textarea {
 padding-left: 16px;
 padding-top: 12px;
+cursor: pointer;
 }
 
 .term-label {
